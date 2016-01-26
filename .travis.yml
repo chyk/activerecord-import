@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.0.0
+  - 2.2.4
 
 gemfile:
   - Gemfile
@@ -18,3 +18,7 @@ before_script:
 
 script:
   - test/travis/build.sh
+
+branches:
+  only:
+    - rails424ruby224
